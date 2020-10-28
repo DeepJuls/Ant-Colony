@@ -124,16 +124,6 @@ class ACO():
 		axs[2].set_title("Mejor Fitness")
 		plt.show()
 
-	def Plot_graph(self):
-		G=nx.MultiDiGraph()
-		pos = {0:(100,100),1:(0,0)}
-		G.add_node(0)
-		G.add_node(1)
-		G.add_edge(0,0)
-		G.add_edge(0,1)
-		G.add_edge(1,0)
-		plt.show()
-
 	def Plot_map(self,iteration):
 		normed_matrix = []
 		total = sum(self.init_pher)
